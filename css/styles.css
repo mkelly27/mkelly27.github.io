@@ -1,0 +1,122 @@
+*{
+  margin: 0;
+  padding:0;
+  vertical-align: top;
+}
+body{
+  background: #111;
+}
+#navbar{
+  display: block;
+  background: #333;
+  color: white;
+  height: 6rem;
+}
+#logo{
+  width: 5%;
+  display: inline-block;
+  background-color: white;
+  height: 6rem;
+}
+#nametitle{
+  width: 33%;
+  display: inline-block;
+  padding-top: 1rem;
+  text-align: left;
+  font-size: 1.5rem;
+}
+#nav{
+  width: 50%;
+  padding-left: 10%;
+  text-align: right;
+  display: inline-block;
+}
+#navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding-bottom: 0;
+    overflow: hidden;
+    display: inline-block;
+}
+
+#navbar li {
+    float: left;
+    padding-top: 2.5rem;
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
+}
+
+#navbar li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 1.2rem 2rem;
+    text-decoration: none;
+    background-color: #333;
+}
+
+#navbar li a:hover {
+    background-color: #111;
+}
+.gallery{
+  width: 100%;
+}
+.gallery a{
+  min-height: 550px;
+  width: 33%;
+  padding-top: 0.2rem;
+  display: inline-block;
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-clip: content-box;
+}
+
+#project1{
+  background-image:url("../img/bitmap1_300x250_1x.jpg");
+}
+#project1:hover{
+  background-image: url();
+}
+
+@media screen and (max-width: 1000px) {
+
+  .gallery a{
+    min-height: 550px;
+    width: 49%;
+
+  }
+  #nametitle{
+    width: 33%;
+  }
+  #logo{
+    width: 10%;
+  }
+  #nav{
+    width: 52%;
+    padding: 0;
+  }
+  #navbar li a {
+      padding: 1rem 1.2rem;
+  }
+}
+@media screen and (max-width: 700px) {
+
+  .gallery a{
+    min-height: 550px;
+    width: 100%;
+
+  }
+  #nametitle{
+    width: 70%;
+  }
+  #logo{
+    width: 10%;
+  }
+  #nav{
+    width: 10%;
+    padding-left: 10%;
+    text-align: right;
+    display: inline-block;
+  }
+}
