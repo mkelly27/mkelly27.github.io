@@ -103,7 +103,7 @@ body{
 @media screen and (max-width: 1080px) and (orientation:portrait){
 
   .gallery a{
-    min-height: 550px;
+    min-height: 400px;
     width: 100%;
 
   }
