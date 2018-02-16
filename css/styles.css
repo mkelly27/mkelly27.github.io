@@ -62,7 +62,7 @@ body{
   width: 100%;
 }
 .gallery a{
-  min-height: 550px;
+  min-height: 800px;
   width: 33%;
   padding-top: 0.2rem;
   display: inline-block;
@@ -79,10 +79,35 @@ body{
   background-image: url();
 }
 
+@media screen and (max-height: 3000px){
+	.gallery a{
+	  min-height: 1200px;
+	}
+}
+@media screen and (max-height: 2000px){
+	.gallery a{
+	  min-height: 800px;
+	}
+}
+@media screen and (max-height: 1500px){
+	.gallery a{
+	  min-height: 600px;
+	}
+}
+@media screen and (max-height: 1100px){
+	.gallery a{
+	  min-height: 450px;
+	}
+}
+@media screen and (max-height: 720px){
+	.gallery a{
+	  min-height: 400px;
+	}
+}
+
 @media screen and (orientation: portrait) and (max-width: 1600px){
 
   .gallery a{
-    min-height: 450px;
     width: 49.5%;
 
   }
@@ -103,7 +128,6 @@ body{
 @media screen and (orientation:portrait) and (max-aspect-ratio: 8/10){
 
   .gallery a{
-  	min-height: 50;
     width: 100%;
 
   }
