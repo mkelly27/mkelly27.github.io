@@ -10,10 +10,18 @@
 
   <link rel="stylesheet" href="css/styles.css">
 
+<script>
+	function myFunction() {
+	    var x = document.getElementById("topnav");
+	    if (x.className === "topnav") {
+	        x.className += " responsive";
+	    } else{
+	        x.className = "topnav";
+	    }
+	}
+</script>
 </head>
-
-<body>
-  <!--<script src="js/scripts.js"></script>-->
+<header>
 	<div id="navbar">
 		<div id="logo">
 			logo goes here
@@ -21,22 +29,24 @@
 
 		<div id="nametitle">
 			<h1>Matt Kelly</h1>
+			<h2>Systems Designer</h2>
 		</div>
 
-		<div id="nav">
-			<ul>
-				<li><a href ="">Projects</a></li>
-				<li><a href ="">Resume</a></li>
-				<li><a href ="">About</a></li>
-				<li><a href ="">Contact</a></li>
-			</ul>
-		</div>
-
+		<nav class="topnav" id="topnav">
+			<a href ="" class = "topnav">Projects</a>
+			<a href ="" class = "topnav">Resume</a>
+			<a href ="" class = "topnav">About</a>
+			<a href ="" class = "topnav">Contact</a>
+			<a href="javascript:void(0);" class="icon" class="responsive" onclick="myFunction()">&#9776;</a>
+		</nav>
 	</div>
+</header>
+<body>
+  <!--<script src="js/scripts.js"></script>-->
+
 
 	<div class = "gallery">
-		<a id ="project1" href = "">
-		</a>
+		<a id ="project1" href = "">Project1</a>
 		<a id ="project1" href = "">
 		</a>
 		<a id ="project1" href = "">

@@ -2,15 +2,33 @@
   margin: 0;
   padding:0;
   vertical-align: top;
+  //font-size: 0;
 }
 body{
   background: #111;
 }
+
+h1{
+	font-size: 3rem;
+	font:verdana;
+	padding:0;
+	margin:0;
+	margin-left: 1%;
+}
+h2{
+	font-size: 1.5rem;
+	font: verdana;
+	text-align: left;
+	padding-left: 4%;
+	margin-top: -0.5rem;
+}
+
 #navbar{
   display: block;
   background: #333;
   color: white;
   height: 6rem;
+  font-size: 0px;
 }
 #logo{
   width: 5%;
@@ -19,57 +37,81 @@ body{
   height: 6rem;
 }
 #nametitle{
-  width: 33%;
+  width: 35%;
   display: inline-block;
-  padding-top: 1rem;
+  padding-top: 0.75rem;
   text-align: left;
-  font-size: 1.5rem;
+  font-size: 0;
 }
-#nav{
-  width: 50%;
-  padding-left: 10%;
+nav{
+  width: 60%;
   text-align: right;
   display: inline-block;
+  font-size: 0;
+  background-color: black;
 }
+
 #navbar ul {
+	width:70%;
     list-style-type: none;
     margin: 0;
-    padding-bottom: 0;
+    padding-left: 30%;
+    margin-top: 2.5rem;
     overflow: hidden;
-    display: inline-block;
+    display: block;
+    font-size: 0;
+    text-align: right;
 }
 
 #navbar li {
-    float: left;
-    padding-top: 2.5rem;
-    padding-left: 0.1rem;
-    padding-right: 0.1rem;
+    float: right;
+    width: 25%;
+    height:5rem;
+    max-width:12rem;
+    padding-left: 0%;
+    font-size: 0;
+    text-align: center;
+    display: inline-block;
 }
 
-#navbar li a {
+nav a {
+	width: 20%;
+	font-size: 1rem;
     display: inline-block;
     color: white;
     text-align: center;
-    padding: 1.2rem 2rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2.4rem;
     text-decoration: none;
     background-color: #333;
 }
 
-#navbar li a:hover {
+nav a:hover {
     background-color: #111;
+}
+
+nav .icon{
+	display: none;
 }
 .gallery{
   width: 100%;
+  font-size: 0;
 }
 .gallery a{
-  min-height: 800px;
-  width: 33%;
+  min-height: 1800px;
+  width: 33.3%;
+  text-align:center;
+  line-height: 1800px;
+  vertical-align: middle;
   padding-top: 0.2rem;
   display: inline-block;
   background-size:cover;
   background-repeat: no-repeat;
   background-position: center;
   background-clip: content-box;
+
+  color:white;
+  text-shadow: 1px 1px 2px black, 1px 1px 5px black, 1px 1px 8px black;
 }
 
 #project1{
@@ -82,65 +124,114 @@ body{
 @media screen and (max-height: 3000px){
 	.gallery a{
 	  min-height: 1200px;
+	  line-height: 1200px;
+	  text-decoration: none;
+	  font-size: 3rem;
 	}
 }
 @media screen and (max-height: 2000px){
 	.gallery a{
 	  min-height: 800px;
+	  line-height: 800px;
+
 	}
 }
 @media screen and (max-height: 1500px){
 	.gallery a{
 	  min-height: 600px;
+	  line-height: 600px;
+
 	}
 }
 @media screen and (max-height: 1100px){
 	.gallery a{
 	  min-height: 450px;
+	    line-height: 450px;
+
 	}
 }
 @media screen and (max-height: 720px){
 	.gallery a{
 	  min-height: 400px;
+	   line-height: 400px;
+
 	}
 }
 
 @media screen and (orientation: portrait) and (max-width: 1600px){
 
   .gallery a{
-    width: 49.5%;
-
-  }
-  #nametitle{
-    width: 33%;
-  }
-  #logo{
-    width: 10%;
-  }
-  #nav{
-    width: 52%;
-    padding: 0;
-  }
+    width: 50%;
+    }
   #navbar li a {
-      padding: 1rem 1.2rem;
   }
 }
 @media screen and (orientation:portrait) and (max-aspect-ratio: 8/10){
 
-  .gallery a{
-    width: 100%;
+	#navbar{
+		height:8rem;
+	}
+	.gallery a{
+		width: 100%;
 
+	}
+	#nametitle{
+		width: 50%;
+		height: 8rem;
+		padding-top: 2rem;
+	}
+	#logo{
+		width: 20%;
+		height: 8rem;
+
+	}
+	nav a{
+		display: none;
+	}
+	nav{
+		width: 30%;
+		padding-right: 0%;
+		vertical-align: middle;
+	}
+	nav .icon{
+		height: 0rem;
+		width: 100%;
+		float: right;
+		font-size:4rem;
+		text-decoration: none;
+		text-align: center;
+		display: block;
+		padding-top: 1rem;
+		padding-bottom: 7rem;
+		color: white;
+		background-color: grey;
+	}
+  nav.responsive {
+  	position: absolute;
+  	margin-top: 8rem;
   }
-  #nametitle{
-    width: 70%;
-  }
-  #logo{
-    width: 10%;
-  }
-  #nav{
-    width: 10%;
+
+  nav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
     padding-left: 10%;
-    text-align: right;
-    display: inline-block;
+    padding-right: 10%;
+    padding-top: 4rem;
+	padding-bottom: 4rem;
+    font-size: 4rem;
+    width:100%;
   }
+    nav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: -8rem;
+    padding:0;
+    padding-top: 1rem;
+	padding-bottom: 7rem;
+	font-size: 4rem;
+	float:right;
+    text-align: center;
+  }
+
 }
