@@ -188,8 +188,11 @@ nav a:hover {
 		height: 100%;
     padding: 0;
 	}
-  #nametitle h1{
-    //padding-top: 1.2rem;
+  h1{
+    font-size: 7vh;
+  }
+  h2{
+    font-size: 3vh;
   }
 	#logo{
 		display: none;
@@ -199,7 +202,7 @@ nav a:hover {
     display: inline-flex;
     justify-content: center;
     flex-direction: column;
-    font-size: 3rem;
+    font-size: 6vh;
     color: white;
     text-decoration: none;
     height:100%;
@@ -232,10 +235,9 @@ nav a:hover {
     justify-content: center;
     flex-direction: column;
     flex:1;
-    height:10%;
     padding-left: 10%;
     width: 100%;
-    font-size: 2rem;
+    font-size: 5vh;
     text-align: left;
   }
 
