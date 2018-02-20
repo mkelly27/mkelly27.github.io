@@ -68,9 +68,13 @@ a#selected{
   font-size: 0px;
 }
 #logo{
+  background-image:url('../img/logo.png');
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-clip: content-box;
   width: 5%;
   display: inline-block;
-  background-color: white;
   height: 10vh;
 }
 #nametitle{
