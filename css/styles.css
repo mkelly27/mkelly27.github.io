@@ -168,13 +168,13 @@ nav a:hover {
 @media screen and (orientation:portrait) and (max-aspect-ratio:8/10){
 
 	#navbar{
-		height:12%;
+		height:20%;
     top:0;
     position: fixed;
     width: 100%;
 	}
   .gallery{
-    margin-top:12%;
+    margin-top:20%;
   }
 	.gallery a{
 		width: 100%;
@@ -212,6 +212,7 @@ nav a:hover {
   }
 	nav{
 		display: none;
+    height:100%;
 	}
 
   #navbar.responsive #nametitle{
@@ -221,16 +222,18 @@ nav a:hover {
     width:100%;
     position: fixed;
     left: 0;
-    top:12%;
+    top:20%;
     display:block;
   }
   #navbar.responsive nav a{
-    display:block;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 10%;
     width: 100%;
     font-size: 2rem;
     text-align: left;
-    height: 20%;
-    padding-left: 10%;
+    height: 10%;
     margin:0;
   }
 
