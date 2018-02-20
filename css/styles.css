@@ -223,6 +223,8 @@ nav a:hover {
     width: 100%;
     font-size: 2rem;
     text-align: left;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     padding-left: 10%;
   }
 
