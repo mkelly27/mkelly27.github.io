@@ -182,7 +182,7 @@ nav a:hover {
 	}
 	#nametitle{
 		width: 65%;
-		height: 8rem;
+		height: 6rem;
 		padding-top: 2rem;
 	}
 	#logo{
@@ -191,13 +191,15 @@ nav a:hover {
 	}
   .icon{
     display: inline-block;
-    font-size: 5.5rem;
+    font-size: 3rem;
     color: white;
     text-decoration: none;
     padding-right: 5%;
     padding-left:5%;
     padding-bottom: 0.55rem;
+    margin-top: 2rem;
     margin-right: 2%;
+    margin-left: 2%
   }
   .icon:hover{
     background-color: #111;
@@ -219,7 +221,9 @@ nav a:hover {
   #navbar.responsive nav a{
     display:block;
     width: 100%;
-    font-size: 4rem;
+    font-size: 2rem;
+    text-align: left;
+    padding-left: 10%;
   }
 
 }
