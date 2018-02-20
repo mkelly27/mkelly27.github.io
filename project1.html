@@ -12,7 +12,7 @@
 
 <script>
 	function myFunction() {
-	    var x = document.getElementById("topnav");
+	    var x = document.getElementById("navbar");
 	    if (x.className === "topnav") {
 	        x.className += " responsive";
 	    } else{
@@ -23,6 +23,7 @@
 </head>
 <header>
 	<div id="navbar">
+    <a href="javascript:void(0);" class="icon" class="responsive" onclick="myFunction()">&#9776;</a>
 		<div id="logo">
 			logo goes here
 		</div>
@@ -37,7 +38,6 @@
 			<a href ="" class = "topnav">Resume</a>
 			<a href ="" class = "topnav">About</a>
 			<a href ="" class = "topnav">Contact</a>
-			<a href="javascript:void(0);" class="icon" class="responsive" onclick="myFunction()">&#9776;</a>
 		</nav>
 	</div>
 </header>
