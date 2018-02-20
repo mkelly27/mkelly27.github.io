@@ -219,6 +219,7 @@ nav a:hover {
     //display: none;
   }
   #navbar.responsive nav{
+    height: 80%;
     width:100%;
     position: fixed;
     left: 0;
@@ -229,12 +230,12 @@ nav a:hover {
     display:flex;
     justify-content: center;
     flex-direction: column;
+    flex:1;
+    height:10%;
     padding-left: 10%;
     width: 100%;
     font-size: 2rem;
     text-align: left;
-    height: 10%;
-    margin:0;
   }
 
 }
