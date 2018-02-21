@@ -165,7 +165,7 @@ nav a:hover {
   text-shadow: 1px 1px 2px black, 1px 1px 5px black, 1px 1px 8px black;
 }
 .gallery a:hover{
-  filter: grayscale(100%) drop-shadow(0px 0px 15px #666);
+  filter: grayscale(100%) drop-shadow(0px 0px 0.5vh #666);
 }
 
 #project1{
@@ -224,7 +224,7 @@ nav a:hover {
 	}
 }
 */
-@media screen and (orientation: portrait) and (max-width: 1600px){
+@media screen and (orientation: portrait){
 
   .gallery a{
     width: 49%;
@@ -233,7 +233,7 @@ nav a:hover {
   #navbar li a {
   }
 }
-@media screen and (orientation:portrait) and (max-aspect-ratio:8/10){
+@media screen and (orientation:portrait) and (max-aspect-ratio:7/10){
 
 	#navbar{
 		height:20%;
@@ -258,15 +258,15 @@ nav a:hover {
     display: inline-flex;
     justify-content: center;
     flex-direction: column;
-		width: 70%;
+		width: 75%;
 		height: 100%;
     padding: 0;
 	}
   h1{
-    font-size: 11vw;
+    font-size: 14vw;
   }
   h2{
-    font-size: 5.5vw;
+    font-size: 5vw;
   }
 	#logo{
 		display: none;
