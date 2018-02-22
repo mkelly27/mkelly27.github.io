@@ -34,7 +34,7 @@ h2{
   width:90%;
   max-width: 1600px;
 }
-#aboutme .container{
+.container{
   background-image: url('../img/me.jpg');
   float: left;
   display: inline-block;
@@ -261,6 +261,27 @@ iframe{
   padding-bottom: 1rem;
   width: 100%;
 }
+object{
+  width:100%;
+  text-align: center;
+  margin: auto;
+  height: 90vh;
+}
+#contact{
+  width:60%;
+  max-width: 1600px;
+  text-align: left;
+  margin: auto;
+  margin-top: 5vh;
+  line-height: 12vh;
+}
+#contact p{
+  font-size: 4vh;
+}
+#contact a{
+  font-family: verdana;
+  color: teal;
+}
 
 
 @media screen and (max-width:1500px){
@@ -295,6 +316,8 @@ iframe{
     padding-top: 1.5rem;
     width: auto;
   }
+
+
 
 }
 @media screen and (orientation:portrait) and (max-aspect-ratio:7/10){
