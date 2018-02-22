@@ -31,12 +31,13 @@ h2{
   margin-right: auto;
   margin-top: 50px;
   text-align: left;
+  width:90%;
   max-width: 1600px;
 }
 #aboutme .container{
   background-image: url('../img/me.jpg');
   float: left;
-  display: inline;
+  display: inline-block;
   width: 33%;
   margin:1rem;
   height: 30vw;
@@ -53,10 +54,12 @@ h3{
   font-family: 'Syncopate';
   text-align: left;
   color: teal;
-
+  margin:1rem;
+  margin-left: 0;
 }
 p{
   margin: 1rem;
+  margin-left: 0rem;
   font-size: 1.5rem;
   color: white;
 }
@@ -195,6 +198,7 @@ iframe{
   width:77%;
   height:80vh;
   margin: 2rem;
+  margin-right: 1rem;
 }
 
 #projectDisplay{
@@ -205,6 +209,14 @@ iframe{
   vertical-align: center;
   vertical-align: middle;
   overflow: visible;
+}
+
+#projectDisplay h3{
+  margin:0rem;
+}
+
+#projectDisplay p{
+  margin:1rem;
 }
 
 #projectDisplay a.back-button{
@@ -227,6 +239,9 @@ iframe{
     height:45vh;
     margin-bottom: 0;
     padding-top: 2rem;
+  }
+  #projectDisplay h3{
+    margin:1rem;
   }
 
   .gallery a{
@@ -339,12 +354,12 @@ iframe{
     margin-bottom: 2rem;
   }
   h3{
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
   }
   p{
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
   }
   #projectDisplay a.back-button{
     position: fixed;
