@@ -328,7 +328,6 @@ object{
     margin: auto;
     background-color: #111;
   }
-
   iframe{
     height:25vh;
   }
@@ -457,5 +456,11 @@ object{
   }
   #textbox p{
     margin:1rem;
+  }
+  #contact #mattkellypicture{
+    display: none;
+  }
+  #contact{
+    width: 95%;
   }
 }
