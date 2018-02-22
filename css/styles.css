@@ -54,7 +54,6 @@ h3{
   text-align: left;
   color: teal;
   margin: 1rem;
-  padding-top: 100px;
 
 }
 p{
@@ -193,7 +192,7 @@ nav a:hover {
 
 iframe{
   display: inline-block;
-  float: right;
+  float: left;
   width:77%;
   height:80vh;
   margin: 2rem;
@@ -211,7 +210,7 @@ iframe{
 
 #projectDisplay a.back-button{
   position: fixed;
-  right:0;
+  left:0;
   top: 15vh;
   padding: 1rem 1.5vw;
   font-size: 1.5vw;
@@ -227,6 +226,7 @@ iframe{
     width:92.75%;
     float:none;
     height:45vh;
+    margin-bottom: 0;
     padding-top: 2rem;
   }
 
