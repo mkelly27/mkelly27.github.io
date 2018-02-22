@@ -268,9 +268,8 @@ object{
   height: 90vh;
 }
 #contact{
-  width:60%;
-  max-width: 1600px;
-  text-align: left;
+  width:95%;
+  text-align: right;
   margin: auto;
   margin-top: 5vh;
   line-height: 12vh;
