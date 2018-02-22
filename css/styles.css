@@ -195,55 +195,85 @@ nav a:hover {
 iframe{
   display: inline-block;
   float: left;
-  width:77%;
-  height:80vh;
-  margin: 2rem;
-  margin-right: 1rem;
+  width:98%;
+  margin:1%;
+  height:81vh;
 }
 
 #projectDisplay{
-  background-color: #333;
   margin: 1rem;
-  margin: 2rem;
-  height: 85vh;
+  min-height: 85vh;
+  height:auto;
   vertical-align: center;
   vertical-align: middle;
   overflow: visible;
 }
+#video-container{
+  width: 70%;
+  float:left;
+  background-color: #333;
+}
+#textbox{
+  display: inline-block;
+  background-color: #333;
+  padding: 1vw 0;
+  width:30%;
+}
+#textbox p{
+  padding: 1rem;
+  font-size: 2.5vh;
+}
 
 #projectDisplay h3{
+  padding:1rem;
   margin:0rem;
+  font-size: 3.5vh;
 }
 
 #projectDisplay p{
-  margin:1rem;
+  margin:0rem;
 }
 
 #projectDisplay a.back-button{
   position: fixed;
-  left:0;
-  top: 15vh;
-  padding: 1rem 1.5vw;
+  right:0;
+  top: 8vh;
+  padding: 1rem 1.5rem;
   font-size: 1.5vw;
   color: white;
   margin: 2rem 0rem;
   display: inline-block;
   background-color: #555;
 }
+#projectDisplay a.back-button:hover{
+  background-color: #222;
+}
+
+
+#screenshots{
+  width: 66%;
+  float:left;
+  background-color: #333;
+  padding: 1rem;
+  overflow: hidden;
+}
+#screenshots img{
+  padding-bottom: 1rem;
+  width: 100%;
+}
+
 
 @media screen and (max-width:1500px){
-  iframe{
-    display: block;
-    width:92.75%;
+  #video-container{
+    width:100%;
     float:none;
-    height:45vh;
-    margin-bottom: 0;
-    padding-top: 2rem;
-  }
-  #projectDisplay h3{
-    margin:1rem;
+    height:47vh;
+    margin: auto;
   }
 
+  iframe{
+    height:45vh;
+  }
   .gallery a{
     width: 49%;
     font-size:  4vw;
@@ -254,14 +284,30 @@ iframe{
     height: auto;
     padding-bottom: 2rem;
   }
+  #projectDisplay h3{
+    font-size: 2rem;
+  }
+  #projectDisplay a.back-button{
+    padding
+  }
+  #textbox{
+    margin:1rem;
+    padding-top: 1.5rem;
+    width: auto;
+  }
+
 }
 @media screen and (orientation:portrait) and (max-aspect-ratio:7/10){
+  #video-container{
+    width:100%;
+    float:none;
+    height:27vh;
+    margin: auto;
+    background-color: #111;
+  }
+
   iframe{
-    margin-top: 21vh;
-    width: 100%;
-    height: 50vw;
-    float: none;
-    margin:auto;
+    height:25vh;
   }
 	#navbar{
 		height:20%;
@@ -382,5 +428,11 @@ iframe{
     padding-bottom: 2rem;
     height: auto;
     background-color: inherit;
+  }
+  #textbox h3{
+    margin: 1rem;
+  }
+  #textbox p{
+    margin:1rem;
   }
 }
