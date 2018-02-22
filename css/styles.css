@@ -45,6 +45,7 @@ h2{
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  line-height: 30vw;
 }
 h3{
   display: inline;
@@ -53,6 +54,8 @@ h3{
   text-align: left;
   color: teal;
   margin: 1rem;
+  padding-top: 100px;
+
 }
 p{
   margin: 1rem;
@@ -187,45 +190,45 @@ nav a:hover {
 #project6{
   background-image:url("../img/project6.png");
 }
-/*
-@media screen and (max-height: 3000px){
-	.gallery a{
-	  height: 1200px;
-	  line-height: 1200px;
-	  text-decoration: none;
-	  font-size: 2vw;
-	}
-}
-@media screen and (max-height: 2000px){
-	.gallery a{
-	  height: 800px;
-	  line-height: 800px;
 
-	}
+iframe{
+  display: inline-block;
+  float: right;
+  width:77%;
+  height:80vh;
+  margin: 2rem;
 }
-@media screen and (max-height: 1500px){
-	.gallery a{
-	  height: 600px;
-	  line-height: 600px;
 
-	}
+#projectDisplay{
+  background-color: #333;
+  margin: 1rem;
+  margin: 2rem;
+  height: 85vh;
+  vertical-align: center;
+  vertical-align: middle;
+  overflow: visible;
 }
-@media screen and (max-height: 1100px){
-	.gallery a{
-	  height: 450px;
-	    line-height: 450px;
 
-	}
+#projectDisplay a.back-button{
+  position: fixed;
+  right:0;
+  top: 15vh;
+  padding: 1rem 1.5vw;
+  font-size: 1.5vw;
+  color: white;
+  margin: 2rem 0rem;
+  display: inline-block;
+  background-color: #555;
 }
-@media screen and (max-height: 720px){
-	.gallery a{
-	  height: 400px;
-	   line-height: 400px;
 
-	}
-}
-*/
-@media screen and (orientation: portrait){
+@media screen and (max-width:1500px){
+  iframe{
+    display: block;
+    width:92.75%;
+    float:none;
+    height:45vh;
+    padding-top: 2rem;
+  }
 
   .gallery a{
     width: 49%;
@@ -233,9 +236,18 @@ nav a:hover {
     }
   #navbar li a {
   }
+  #projectDisplay{
+    height: auto;
+    padding-bottom: 2rem;
+  }
 }
 @media screen and (orientation:portrait) and (max-aspect-ratio:7/10){
-
+  iframe{
+    margin-top: 21vh;
+    height: 25vh;
+    float: none;
+    margin:auto;
+  }
 	#navbar{
 		height:20%;
     top:0;
@@ -333,5 +345,26 @@ nav a:hover {
   p{
     margin-left: 1rem;
     margin-right: 1rem;
+  }
+  #projectDisplay a.back-button{
+    position: fixed;
+    left:0;
+    top: 90vh;
+    height: 5vh;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 5vh;
+    width: 33%;
+    padding: 1rem 1.5vw;
+    font-size: 1.5rem;
+    color: white;
+    margin: 2rem 0rem;
+    display: inline-block;
+    background-color: #555;
+  }
+  #projectDisplay {
+    margin-top: 21vh;
+    padding-bottom: 2rem;
+    height: auto;
   }
 }
