@@ -19,7 +19,9 @@ html {
 }
 a{
   font-family: 'Bree Serif', 'serif';
-  font-size: 1.2rem;
+  font-size: 2rem;
+  float:left;
+  display: block;
   padding-top: 10px;
 }
 .w3-right{
@@ -39,8 +41,8 @@ a{
 } */
 #menu{
   text-align:center;
-  padding: 64px 10%;
-  padding-top: 128px;
+  padding: 48px 5%;
+  padding-top: 206px;
 }
 
 
@@ -344,6 +346,9 @@ textarea {
     }
     .w3-right{
       margin-top: 0;
+    }
+    #menu{
+      margin-top:-30px;
     }
 
 }
