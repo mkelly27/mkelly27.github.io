@@ -1,0 +1,66 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Matt Kelly | Not Pong</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="Matt Kelly" content="SitePoint">
+  <link rel="SHORTCUT ICON" href="img/favicon.ico" type="image/x-icon" />
+  <link rel="ICON" href="img/favicon.ico" type="image/ico" />
+  <link rel="stylesheet" href="css/styles.css">
+  <link href='https://fonts.googleapis.com/css?family=Atomic Age' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Syncopate' rel='stylesheet'>
+
+<script>
+	function myFunction() {
+	    var x = document.getElementById("navbar");
+	    if (x.className === "topnav") {
+	        x.className += " responsive";
+	    } else{
+	        x.className = "topnav";
+	    }
+	}
+</script>
+</head>
+<header>
+	<div id="navbar" class = "topnav">
+    <a href="javascript:void(0);" class="icon" class="responsive" onclick="myFunction()">&#9776;</a>
+    <a href = "index.html">
+  		<div id="logo">
+  		</div>
+
+  		<div id="nametitle">
+  			<h1>Matt Kelly</h1>
+        <h2>Systems and Level Designer</h2>
+  		</div>
+    </a>
+
+    <nav class="topnav" id="topnav">
+			<a href ="index.html" class = "topnav" id="selected">Projects</a>
+			<a href ="resume.html" class = "topnav">Resume</a>
+			<a href ="aboutme.html" class = "topnav">About</a>
+			<a href ="contact.html" class = "topnav">Contact</a>
+		</nav>
+	</div>
+</header>
+<body>
+  <!--<script src="js/scripts.js"></script>-->
+  <div id = "projectDisplay">
+    <div id="video-container">
+      <iframe src="https://www.youtube.com/embed/f3aDC5CmixI?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+    <a href = "index.html" class="back-button">X</a>
+    <div id="textbox">
+      <h3>Not Pong</h3>
+      <p>Not Pong was made as a challenge to myself. I wanted to see if I could
+        take a simple idea like Pong, and expand it to encorporate new ideas
+        because of a computer antogonist. The idea could be expanded upon much
+        more heavily, but this prototype allows you to see the tone!
+        <br><br>This was a solo project, everything aside from free sound clips
+        were made by me.
+    </div>
+  </div>
+</body>
+</html>

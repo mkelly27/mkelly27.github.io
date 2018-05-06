@@ -10,23 +10,31 @@ body{
 }
 
 h1{
-	font-size: 6vh;
+	font-size: 8vh;
   font-family: 'Atomic Age';;
-	margin:0;
+	margin-top:-2.3vh;
   color: white;
   text-decoration: none;
 }
 h2{
-	font-size: 2vh;
+	font-size: 1.8vh;
 	font-family: 'Syncopate';
 	text-align: left;
-  margin-left: 1vh;
-	margin-top: -1.5vh;
+  margin-left: 0.3vh;
+	margin-top: -1.6vh;
   color: white;
   text-decoration: none;
 }
 
 #aboutme{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  text-align: left;
+  width:90%;
+  max-width: 1600px;
+}
+#resume{
   margin-left: auto;
   margin-right: auto;
   margin-top: 50px;
@@ -58,11 +66,37 @@ h3{
   margin:1rem;
   margin-left: 0;
 }
+#resume h3{
+  font-family: 'Atomic Age';
+  font-size: 2.5rem;
+  margin-left: -1rem;
+}
+h4{
+  font-size: 1.2rem;
+  font-family: 'Syncopate';
+  text-align: left;
+  color: teal;
+  margin:1rem;
+  margin-left: 0;
+}
 p{
   margin: 1rem;
   margin-left: 0rem;
   font-size: 1.5rem;
   color: white;
+  line-height: 1.7rem;
+}
+#resume p{
+  margin-left: 1rem;
+  font-size: 1.2rem;
+}
+#resume li{
+  margin-left: 3rem;
+  font-size: 1rem;
+  color: #bfbfbf;
+}
+#resume #skills{
+  color: #bfbfbf;
 }
 
 a{
@@ -91,14 +125,15 @@ a#selected{
   height: 10vh;
 }
 #nametitle{
-  width: 45%;
+  width: 50%;
   display: inline-block;
+  vertical-align: middle;
   padding-top: 1vh;
   text-align: left;
   font-size: 0;
 }
 nav{
-  width: 50%;
+  width: 45%;
   text-align: right;
   display: inline-block;
   font-size: 0;
@@ -175,6 +210,9 @@ nav a:hover {
   filter: grayscale(100%) drop-shadow(0px 0px 0.5vh #666);
 }
 
+#project0{
+  background-image:url("../img/project0.png");
+}
 #project1{
   background-image:url("../img/project1.jpg");
 }
@@ -193,6 +231,31 @@ nav a:hover {
 #project6{
   background-image:url("../img/project6.png");
 }
+#project7{
+  background-image:url("../img/project7.png");
+}
+#project8{
+  background-image:url("../img/project8.png");
+}
+#project9{
+  background-image:url("../img/project9.png");
+}
+#project10{
+  background-image:url("../img/project10.png");
+}
+#project11{
+  background-image:url("../img/AnimGifs/chargeattackonehand.gif");
+}
+#project12{
+  background-image:url("../img/AnimGifs/wolfanims.gif");
+}
+#project13{
+  background-image:url("../img/AnimGifs/GIF.gif");
+}
+#project14{
+  background-image:url("../img/AnimGifs/rundead.gif");
+}
+
 
 iframe{
   display: inline-block;
@@ -274,10 +337,9 @@ object{
   text-align: right;
   margin: auto;
   margin-top: 5vh;
-  line-height: 12vh;
 }
 #contact p{
-  font-size: 4vh;
+  font-size: 2vh;
 }
 #contact a{
   font-family: verdana;
@@ -317,7 +379,15 @@ object{
     padding-top: 1.5rem;
     width: auto;
   }
-
+  h1{
+    font-size: 6.5vh;
+    margin-top: -0.3vh;
+    vertical-align: middle;
+  }
+  h2{
+    font-size: 1.4vh;
+    margin-top: -1.5vh;
+  }
 
 
 }
@@ -410,6 +480,10 @@ object{
     text-align: left;
   }
   #aboutme{
+    margin-top: 22vh;
+    text-align: left;
+  }
+  #resume{
     margin-top: 22vh;
     text-align: left;
   }
